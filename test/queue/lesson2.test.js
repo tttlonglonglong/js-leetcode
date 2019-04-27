@@ -1,12 +1,6 @@
-import rect from '../../code/stack/lesson2'
+import leastInterval from '../../code/queue/lesson2'
 
-test('rect:1', () => {
-  // [
-  //   ["1","0","1","0","0"],
-  //   ["1","0","1","1","1"],
-  //   ["1","1","1","1","1"],
-  //   ["1","0","0","1","0"]
-  // ]
-  let input = [['1', '0', '1', '0', '0'], ['1', '0', '1', '1', '1'], ['1', '1', '1', '1', '1'], ['1', '0', '0', '1', '0']]
-  expect(rect(input)).toBe(6)
+test('leastInterval:1', () => {
+  expect(leastInterval(['A', 'A', 'A', 'B', 'B', 'B'], 2)).toBe(8)
+  expect(leastInterval(['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D'], 2)).toBe(8)
 })
